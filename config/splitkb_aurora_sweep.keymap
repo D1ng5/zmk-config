@@ -73,7 +73,7 @@
         default_layer {
             bindings = <
 &mt DE_N1 DE_X         &mt DE_N2 DE_V          &mt DE_N3 DE_L   &mt DE_N4 DE_C  &mt DE_N5 DE_W    &mt DE_N6 DE_K  &mt DE_N7 DE_H  &mt DE_N8 DE_G      &mt DE_N9 DE_F  &mt DE_N0 DE_Q
-&kp DE_U               &kp DE_I                &hm LALT DE_A    &hm LGUI DE_E   &kp DE_O          &kp DE_S        &hm RGUI DE_N   &hm RALT DE_R       &kp DE_T        &kp DE_D
+&kp DE_U               &hm LCTRL DE_I          &hm LALT DE_A    &hm LGUI DE_E   &kp DE_O          &kp DE_S        &hm RGUI DE_N   &hm RALT DE_R       &hm LCTRL DE_T  &kp DE_D
 &mt LSHFT DE_U_UMLAUT  &kp DE_O_UMLAUT         &kp DE_A_UMLAUT  &kp DE_P        &kp DE_Z          &kp DE_B        &kp DE_M        &mt DE_COMMA DE_SZ  &mt DOT DE_Y    &mt RSHFT DE_J
 &sk LSHIFT             &mt LC(LS(LALT)) SPACE                                                                                                         &mt RCTRL RET   &to 1
             >;
@@ -81,10 +81,10 @@
 
         left_layer {
             bindings = <
-&kp LA(DOT)         &kp DE_UNDER            &kp DE_LBKT       &kp DE_RBKT       &kp DE_CARET    &kp EXCL      &kp DE_LT         &kp DE_GT         &kp DE_EQUAL   &kp DE_AMPS
-&kp DE_BSLH         &kp KP_SLASH            &hm LALT DE_LBRC  &hm LGUI DE_RBRC  &kp DE_STAR     &kp DE_QMARK  &hm RGUI DE_LPAR  &hm RALT DE_RPAR  &kp DE_MINUS   &kp DEL
-&mt LSHIFT DE_HASH  &kp DE_DLLR             &kp DE_PIPE       &kp DE_TILDE      &kp DE_GRAVE    &kp DE_PLUS   &kp DE_PRCNT      &kp DE_DQT        &kp DE_SQT     &mt RSHFT BSPC
-&to 0               &mt LC(LS(LALT)) SPACE                                                                                                        &mt RCTRL RET  &to 2
+&kp LA(DOT)         &kp DE_UNDER            &kp DE_LBKT       &kp DE_RBKT       &kp DE_CARET    &kp EXCL      &kp DE_LT         &kp DE_GT         &kp DE_EQUAL        &kp DE_AMPS
+&kp DE_BSLH         &hm LCTRL KP_SLASH      &hm LALT DE_LBRC  &hm LGUI DE_RBRC  &kp DE_STAR     &kp DE_QMARK  &hm RGUI DE_LPAR  &hm RALT DE_RPAR  &hm RCTRL DE_MINUS  &kp DEL
+&mt LSHIFT DE_HASH  &kp DE_DLLR             &kp DE_PIPE       &kp DE_TILDE      &kp DE_GRAVE    &kp DE_PLUS   &kp DE_PRCNT      &kp DE_DQT        &kp DE_SQT          &mt RSHFT BSPC
+&to 0               &mt LC(LS(LALT)) SPACE                                                                                                        &mt RCTRL RET       &to 2
             >;
         };
 
@@ -92,7 +92,7 @@
             bindings = <
 &kp PG_UP             &kp BSPC              &kp UP              &kp DEL               &kp PG_DN                 &kp LA(E)     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp MINUS
 &kp HOME              &kp LEFT              &kp DOWN            &kp RIGHT             &kp END                   &kp DOLLAR    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &kp PLUS
-&mt C_AC_UNDO K_UNDO  &mt C_AC_REDO K_REDO  &mt C_AC_CUT K_CUT  &mt C_AC_COPY K_COPY  &mt C_AC_PASTE K_PASTE    &kp DE_CARET  &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3            &kp COMMA
+&mt C_AC_UNDO K_UNDO  &mt C_AC_REDO K_REDO  &mt C_AC_CUT K_CUT  &mt C_AC_COPY K_COPY  &mt C_AC_PASTE K_PASTE    &kp DE_CARET  &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3            &mt RSHFT DE_COMMA
 &to 0                 &trans                                                                                                                                    &mt RET KP_NUMBER_0  &to 3
             >;
         };
