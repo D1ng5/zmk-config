@@ -81,7 +81,7 @@
 
         left_layer {
             bindings = <
-&kp LA(DOT)         &kp DE_UNDER            &kp LBKT             &kp RBKT       &kp CARET       &kp EXCL      &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_EQUAL        &kp DE_AMPS
+&kp LA(DOT)         &kp DE_UNDER            &kp LA(DE_N5)        &kp RA(DE_N6)  &kp CARET       &kp EXCL      &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_EQUAL        &kp DE_AMPS
 &kp DE_BSLH         &hm LCTRL KP_SLASH      &hm LALT LEFT_BRACE  &hm LGUI RBRC  &kp DE_STAR     &kp DE_QMARK  &hm RGUI DE_LPAR  &hm RALT DE_RPAR     &hm RCTRL DE_MINUS  &kp COLON
 &mt LSHIFT DE_HASH  &kp DE_DLLR             &kp PIPE             &kp DE_TILDE   &kp DE_GRAVE    &kp DE_PLUS   &kp DE_PRCNT      &kp DE_DQT           &kp DE_SQT          &mt RSHFT SEMI
 &to 0               &mt LC(LS(LALT)) SPACE                                                                                                           &mt RCTRL RET       &to 2
