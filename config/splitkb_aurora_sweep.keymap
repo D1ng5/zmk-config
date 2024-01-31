@@ -81,7 +81,7 @@
 
         left_layer {
             bindings = <
-&kp LA(DOT)         &kp DE_UNDER            &kp LA(DE_N5)       &kp RA(DE_N6)       &kp DE_LESS_THAN    &kp EXCL      &kp LS(COMMA)       &kp LS(DOT)         &kp DE_EQUAL        &kp DE_AMPS
+&kp LA(DOT)         &kp DE_UNDER            &kp LA(DE_N5)       &kp RA(DE_N6)       &kp DE_LESS_THAN    &kp EXCL      &kp DE_CARET        &kp LS(DE_CARET)    &kp DE_EQUAL        &kp DE_AMPS
 &kp LS(LA(DE_N7))   &hm LCTRL KP_SLASH      &hm LALT LA(DE_N8)  &hm LGUI LA(DE_N9)  &kp DE_STAR         &kp DE_QMARK  &hm RGUI LS(DE_N8)  &hm RALT LS(DE_N9)  &hm RCTRL DE_MINUS  &kp LS(DE_PERIOD)
 &mt LSHIFT DE_HASH  &kp DE_DLLR             &kp LA(DE_N7)       &kp LA(DE_N)        &kp DE_GRAVE        &kp DE_PLUS   &kp DE_PRCNT        &kp DE_DQT          &kp DE_SQT          &mt RSHFT LS(DE_COMMA)
 &to 0               &mt LC(LS(LALT)) SPACE                                                                                                                    &mt RCTRL RET       &to 2
@@ -90,19 +90,19 @@
 
         right_layer {
             bindings = <
-&kp PG_UP             &kp BSPC              &kp UP              &kp DEL               &kp PG_DN                 &kp LA(E)   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp MINUS
-&kp HOME              &kp LEFT              &kp DOWN            &kp RIGHT             &kp END                   &kp DOLLAR  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &kp PLUS
-&mt C_AC_UNDO K_UNDO  &mt C_AC_REDO K_REDO  &mt C_AC_CUT K_CUT  &mt C_AC_COPY K_COPY  &mt C_AC_PASTE K_PASTE    &kp CARET   &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3            &mt RSHFT DE_COMMA
-&to 0                 &trans                                                                                                                                  &mt RET KP_NUMBER_0  &to 3
+&kp PG_UP             &kp BSPC              &kp UP              &kp DEL               &kp PG_DN                 &kp LA(E)   &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp MINUS
+&kp HOME              &kp LEFT              &kp DOWN            &kp RIGHT             &kp END                   &kp DOLLAR  &hm RGUI KP_NUMBER_4  &hm RALT KP_NUMBER_5  &hm RCTRL KP_NUMBER_6  &kp PLUS
+&mt C_AC_UNDO K_UNDO  &mt C_AC_REDO K_REDO  &mt C_AC_CUT K_CUT  &mt C_AC_COPY K_COPY  &mt C_AC_PASTE K_PASTE    &kp CARET   &kp KP_NUMBER_1       &kp KP_N2             &kp KP_N3              &mt RSHFT DE_COMMA
+&to 0                 &trans                                                                                                                                            &mt RET KP_NUMBER_0    &to 3
             >;
         };
 
         tri_layer {
             bindings = <
-&trans      &trans      &trans        &trans        &trans    &kp CARET    &kp DE_CARET   &kp LT            &kp GT               &trans
-&trans      &kp LCTRL   &kp LEFT_ALT  &kp LEFT_GUI  &trans    &kp LS(DOT)  &kp LS(COMMA)  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans
-&bt BT_CLR  &bt BT_NXT  &bt BT_PRV    &trans        &trans    &trans       &trans         &trans            &trans               &kp RSHFT
-&to 0       &trans                                                                                          &trans               &to 3
+&trans      &trans      &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
+&trans      &kp LCTRL   &kp LEFT_ALT  &kp LEFT_GUI  &trans    &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_NXT  &bt BT_PRV    &trans        &trans    &trans  &trans  &trans  &trans  &kp RSHFT
+&to 0       &trans                                                                    &trans  &to 3
             >;
         };
     };
