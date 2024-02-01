@@ -32,26 +32,8 @@
 
         combo_ralt {
             timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
-
-        combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&kp LGUI>;
-        };
-
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
+            key-positions = <8 9>;
+            bindings = <&kp BACKSPACE>;
         };
     };
 
@@ -90,10 +72,10 @@
 
         right_layer {
             bindings = <
-&kp PG_UP             &kp BSPC              &kp UP              &kp DEL               &kp PG_DN                 &kp LA(E)   &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp MINUS
-&kp HOME              &kp LEFT              &kp DOWN            &kp RIGHT             &kp END                   &kp DOLLAR  &hm RGUI KP_NUMBER_4  &hm RALT KP_NUMBER_5  &hm RCTRL KP_NUMBER_6  &kp PLUS
-&mt C_AC_UNDO K_UNDO  &mt C_AC_REDO K_REDO  &mt C_AC_CUT K_CUT  &mt C_AC_COPY K_COPY  &mt C_AC_PASTE K_PASTE    &kp CARET   &kp KP_NUMBER_1       &kp KP_N2             &kp KP_N3              &mt RSHFT DE_COMMA
-&to 0                 &trans                                                                                                                                            &mt RET KP_NUMBER_0    &to 3
+&kp PG_UP             &kp BSPC              &kp UP        &kp DEL       &kp PG_DN       &kp LA(E)   &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp MINUS
+&kp HOME              &kp LEFT              &kp DOWN      &kp RIGHT     &kp END         &kp DOLLAR  &hm RGUI KP_NUMBER_4  &hm RALT KP_NUMBER_5  &hm RCTRL KP_NUMBER_6  &kp PLUS
+&mt C_AC_UNDO K_UNDO  &mt C_AC_REDO K_REDO  &kp LG(DE_X)  &kp LG(DE_C)  &kp LG(DE_V)    &kp CARET   &kp KP_NUMBER_1       &kp KP_N2             &kp KP_N3              &mt RSHFT DE_COMMA
+&to 0                 &trans                                                                                                                    &mt RET KP_NUMBER_0    &to 3
             >;
         };
 
