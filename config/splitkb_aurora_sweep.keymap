@@ -49,6 +49,15 @@
         };
     };
 
+    macros {
+        Only_Caret: Only_Caret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_LESS_THAN &kp SPACE>;
+            label = "ONLY_CARET";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -72,10 +81,10 @@
 
         right_layer {
             bindings = <
-&kp PG_UP             &kp BSPC              &kp UP        &kp DEL       &kp PG_DN       &kp LA(E)              &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp MINUS
-&kp HOME              &kp LEFT              &kp DOWN      &kp RIGHT     &kp END         &kp DOLLAR             &hm RGUI KP_NUMBER_4  &hm LALT KP_NUMBER_5  &hm RCTRL KP_NUMBER_6  &kp PLUS
-&mt C_AC_UNDO K_UNDO  &mt C_AC_REDO K_REDO  &kp LG(DE_X)  &kp LG(DE_C)  &kp LG(DE_V)    &mt CARET KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_N2             &kp KP_N3              &mt RSHFT DE_COMMA
-&to 0                 &trans                                                                                                                               &kp RET                &to 3
+&kp PG_UP             &kp BSPC              &kp UP        &kp DEL       &kp PG_DN       &kp LA(E)             &kp KP_NUMBER_7       &kp KP_NUMBER_8       &kp KP_NUMBER_9        &kp MINUS
+&kp HOME              &kp LEFT              &kp DOWN      &kp RIGHT     &kp END         &Only_Caret           &hm RGUI KP_NUMBER_4  &hm LALT KP_NUMBER_5  &hm RCTRL KP_NUMBER_6  &kp PLUS
+&mt C_AC_UNDO K_UNDO  &mt C_AC_REDO K_REDO  &kp LG(DE_X)  &kp LG(DE_C)  &kp LG(DE_V)    &mt DLLR KP_NUMBER_0  &kp KP_NUMBER_1       &kp KP_N2             &kp KP_N3              &mt RSHFT DE_COMMA
+&to 0                 &trans                                                                                                                              &kp RET                &to 3
             >;
         };
 
