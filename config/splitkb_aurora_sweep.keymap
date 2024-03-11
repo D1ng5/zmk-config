@@ -47,6 +47,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        ts: toSwitch {
+            compatible = "zmk,behavior-hold-tap";
+            label = "to switch";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&lt>, <&to>;
+        };
     };
 
     macros {
@@ -66,7 +76,7 @@
 &mt DE_N1 DE_X         &mt DE_N2 DE_V          &mt DE_N3 DE_L   &mt DE_N4 DE_C  &mt DE_N5 DE_W    &mt DE_N6 DE_K  &mt DE_N7 DE_H  &mt DE_N8 DE_G      &mt DE_N9 DE_F  &mt DE_N0 DE_Q
 &kp DE_U               &hm LCTRL DE_I          &hm LALT DE_A    &hm LGUI DE_E   &kp DE_O          &kp DE_S        &hm RGUI DE_N   &hm RALT DE_R       &hm LCTRL DE_T  &kp DE_D
 &mt LSHFT DE_U_UMLAUT  &kp DE_O_UMLAUT         &kp DE_A_UMLAUT  &kp DE_P        &kp DE_Z          &kp DE_B        &kp DE_M        &mt DE_COMMA DE_SZ  &mt DOT DE_Y    &mt RSHFT DE_J
-&sk LSHIFT             &mt LC(LS(LALT)) SPACE                                                                                                         &mt RCTRL RET   &to 1
+&ts 2 2                &mt LC(LS(LALT)) SPACE                                                                                                         &mt RCTRL RET   &ts 1 1
             >;
         };
 
