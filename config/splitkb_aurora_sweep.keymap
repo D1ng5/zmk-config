@@ -71,10 +71,10 @@
 
         default_layer {
             bindings = <
-&mt NUMBER_1 DE_X      &mt NUMBER_2 DE_V       &mt NUMBER_3 DE_L  &mt NUMBER_4 DE_C  &mt NUMBER_5 DE_W    &mt NUMBER_6 DE_K  &mt N7 DE_H    &mt NUMBER_8 DE_G   &mt NUMBER_9 DE_F  &mt NUMBER_0 DE_Q
-&kp DE_U               &kp DE_I                &hm LALT DE_A      &hm LGUI DE_E      &kp DE_O             &kp DE_S           &hm RGUI DE_N  &hm RALT DE_R       &kp DE_T           &kp DE_D
-&mt LSHFT DE_U_UMLAUT  &kp DE_O_UMLAUT         &kp DE_A_UMLAUT    &kp DE_P           &kp DE_Z             &kp DE_B           &kp DE_M       &mt DE_COMMA DE_SZ  &mt DOT DE_Y       &mt RSHFT DE_J
-&mo 1                  &mt LC(LS(LALT)) SPACE                                                                                                                   &mt RCTRL RET      &mo 2
+&mt NUMBER_1 DE_X      &mt NUMBER_2 DE_V           &mt NUMBER_3 DE_L  &mt NUMBER_4 DE_C  &mt NUMBER_5 DE_W    &mt NUMBER_6 DE_K  &mt N7 DE_H    &mt NUMBER_8 DE_G   &mt NUMBER_9 DE_F  &mt NUMBER_0 DE_Q
+&kp DE_U               &kp DE_I                    &hm LALT DE_A      &hm LGUI DE_E      &kp DE_O             &kp DE_S           &hm RGUI DE_N  &hm RALT DE_R       &kp DE_T           &kp DE_D
+&mt LSHFT DE_U_UMLAUT  &kp DE_O_UMLAUT             &kp DE_A_UMLAUT    &kp DE_P           &kp DE_Z             &kp DE_B           &kp DE_M       &mt DE_COMMA DE_SZ  &mt DOT DE_Y       &mt RSHFT DE_J
+&mo 1                  &mt LS(LA(LEFT_GUI)) SPACE                                                                                                                   &mt RCTRL RET      &mo 2
             >;
         };
 
