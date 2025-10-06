@@ -62,6 +62,15 @@
         };
     };
 
+    macros {
+        only_caret: only_caret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_CARET &kp DE_SPACE>;
+            label = "ONLY_CARET";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -87,10 +96,10 @@
 
         right_layer {
             bindings = <
-&kp PG_UP    &kp BSPC   &kp UP     &kp DEL    &kp PG_DN            &kp RA(E)  &kp DE_N7            &kp DE_N8            &kp DE_N9        &mt LS(DE_PLUS) KP_SLASH
-&kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT  &kp END              &kp CARET  &hm RIGHT_GUI DE_N4  &hm RIGHT_ALT DE_N5  &hm RCTRL DE_N6  &mt DE_MINUS DE_DOT
-&mt LSHFT A  &trans     &kp RG(X)  &kp LG(C)  &kp LG(LS(LA(V)))    &kp DE_N0  &kp DE_N1            &kp DE_N2            &kp DE_N3        &mt RSHIFT DE_COMMA
-&mo 1        &kp SPACE                                                                                                  &kp RET          &mo 2
+&kp PG_UP    &kp BSPC   &kp UP     &kp DEL    &kp PG_DN            &kp RA(E)    &kp DE_N7            &kp DE_N8            &kp DE_N9        &mt LS(DE_PLUS) KP_SLASH
+&kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT  &kp END              &only_caret  &hm RIGHT_GUI DE_N4  &hm RIGHT_ALT DE_N5  &hm RCTRL DE_N6  &mt DE_MINUS DE_DOT
+&mt LSHFT A  &to 3      &kp RG(X)  &kp LG(C)  &kp LG(LS(LA(V)))    &kp DE_N0    &kp DE_N1            &kp DE_N2            &kp DE_N3        &mt RSHIFT DE_COMMA
+&mo 1        &kp SPACE                                                                                                    &kp RET          &mo 2
             >;
         };
 
