@@ -66,7 +66,7 @@
         only_caret: only_caret {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DE_CARET &kp DE_SPACE>;
+            bindings = <&kp DE_LT &kp DE_SPACE>;
             label = "ONLY_CARET";
         };
     };
