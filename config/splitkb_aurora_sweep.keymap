@@ -45,7 +45,7 @@
         };
 
         Layer3 {
-            bindings = <&to 3>;
+            bindings = <&ts 3 3>;
             key-positions = <33 30>;
         };
     };
@@ -59,6 +59,16 @@
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        ts: ts {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TS";
+            bindings = <&lt>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <0>;
         };
     };
 
@@ -98,17 +108,17 @@
             bindings = <
 &kp PG_UP    &kp BSPC   &kp UP     &kp DEL    &kp PG_DN            &kp RA(E)    &kp DE_N7            &kp DE_N8            &kp DE_N9        &mt LS(DE_PLUS) KP_SLASH
 &kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT  &kp END              &only_caret  &hm RIGHT_GUI DE_N4  &hm RIGHT_ALT DE_N5  &hm RCTRL DE_N6  &mt DE_MINUS DE_DOT
-&mt LSHFT A  &to 3      &kp RG(X)  &kp LG(C)  &kp LG(LS(LA(V)))    &kp DE_N0    &kp DE_N1            &kp DE_N2            &kp DE_N3        &mt RSHIFT DE_COMMA
+&mt LSHFT A  &ts 3 3    &kp RG(X)  &kp LG(C)  &kp LG(LS(LA(V)))    &kp DE_N0    &kp DE_N1            &kp DE_N2            &kp DE_N3        &mt RSHIFT DE_COMMA
 &mo 1        &kp SPACE                                                                                                    &kp RET          &mo 2
             >;
         };
 
         layer_3 {
             bindings = <
-&to 0   &bl BL_INC  &bl BL_OFF  &bt BT_CLR_ALL  &bt BT_CLR    &rgb_ug RGB_OFF  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI
-&trans  &bl BL_DEC  &bl BL_OFF  &bt BT_PRV      &bt BT_NXT    &rgb_ug RGB_ON   &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD
-&trans  &trans      &trans      &trans          &trans        &trans           &trans           &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
-&trans  &trans                                                                                                   &trans           &trans
+&ts 0 0  &bl BL_INC  &bl BL_OFF  &bt BT_CLR_ALL  &bt BT_CLR    &rgb_ug RGB_OFF  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI
+&trans   &bl BL_DEC  &bl BL_OFF  &bt BT_PRV      &bt BT_NXT    &rgb_ug RGB_ON   &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD
+&trans   &trans      &trans      &trans          &trans        &trans           &trans           &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
+&trans   &trans                                                                                                   &trans           &trans
             >;
         };
     };
