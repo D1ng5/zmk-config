@@ -87,9 +87,9 @@
         default_layer {
             bindings = <
 &mt NUMBER_1 DE_X      &mt NUMBER_2 DE_V           &mt NUMBER_3 DE_L  &mt NUMBER_4 DE_C  &mt NUMBER_5 DE_W    &mt NUMBER_6 DE_K  &mt N7 DE_H    &mt NUMBER_8 DE_G   &mt NUMBER_9 DE_F  &mt NUMBER_0 DE_Q
-&kp DE_U               &hm LCTRL DE_I              &hm LALT DE_A      &hm LGUI DE_E      &kp DE_O             &kp DE_S           &hm RGUI DE_N  &hm RALT DE_R       &hm RCTRL DE_T     &kp DE_D
+&kp DE_U               &hm LCTRL DE_I              &hm LALT DE_A      &hm LGUI DE_E      &kp DE_O             &kp DE_S           &hm RGUI DE_N  &hm LALT DE_R       &hm RCTRL DE_T     &kp DE_D
 &mt LSHFT DE_U_UMLAUT  &kp DE_O_UMLAUT             &kp DE_A_UMLAUT    &kp DE_P           &kp DE_Z             &kp DE_B           &kp DE_M       &mt DE_COMMA DE_SZ  &mt DOT DE_Y       &mt RSHFT DE_J
-&mo 1                  &mt LS(LA(LEFT_GUI)) SPACE                                                                                                                   &mt RCTRL RET      &mo 2
+&mo 2                  &mt LS(LA(LEFT_GUI)) SPACE                                                                                                                   &mt RCTRL RET      &mo 1
             >;
         };
 
@@ -98,7 +98,7 @@
 &kp LA(DOT)        &kp DE_UNDER            &kp RA(NUMBER_5)          &kp RA(N6)                 &kp DE_LT       &kp DE_EXCLAMATION  &kp DE_CARET      &kp RS(DE_CARET)  &kp DE_EQUAL   &kp DE_AMPS
 &kp RS(RA(DE_N7))  &kp KP_SLASH            &hm LALT DE_LEFT_BRACKET  &hm LGUI DE_RIGHT_BRACKET  &kp DE_STAR     &kp DE_QMARK        &hm RGUI DE_LPAR  &hm RALT DE_RPAR  &kp DE_MINUS   &kp DE_COLON
 &mt LSHFT DE_HASH  &kp DE_DLLR             &kp RA(DE_N7)             &kp RA(DE_N)               &kp DE_GRAVE    &kp DE_PLUS         &kp DE_PRCNT      &kp DE_DQT        &kp DE_SQT     &mt RSHFT DE_SEMICOLON
-&mo 1              &mt LC(LS(LALT)) SPACE                                                                                                                               &mt RCTRL RET  &mo 2
+&trans             &mt LC(LS(LALT)) SPACE                                                                                                                               &mt RCTRL RET  &trans
             >;
         };
 
@@ -106,10 +106,10 @@
 
         right_layer {
             bindings = <
-&kp PG_UP    &kp BSPC   &kp UP     &kp DEL    &kp PG_DN            &kp RA(E)    &kp DE_N7            &kp DE_N8            &kp DE_N9        &mt LS(DE_PLUS) KP_SLASH
-&kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT  &kp END              &only_caret  &hm RIGHT_GUI DE_N4  &hm RIGHT_ALT DE_N5  &hm RCTRL DE_N6  &mt DE_MINUS DE_DOT
-&mt LSHFT A  &ts 3 3    &kp RG(X)  &kp LG(C)  &kp LG(LS(LA(V)))    &kp DE_N0    &kp DE_N1            &kp DE_N2            &kp DE_N3        &mt RSHIFT DE_COMMA
-&mo 1        &kp SPACE                                                                                                    &kp RET          &mo 2
+&kp PG_UP    &kp BSPC   &kp UP     &kp DEL    &kp PG_DN            &kp RA(E)    &kp DE_N7            &kp DE_N8           &kp DE_N9        &mt LS(DE_PLUS) KP_SLASH
+&kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT  &kp END              &only_caret  &hm RIGHT_GUI DE_N4  &hm RG(LALT) DE_N5  &hm RCTRL DE_N6  &mt DE_MINUS DE_DOT
+&mt LSHFT A  &ts 3 3    &kp RG(X)  &kp LG(C)  &kp LG(LS(LA(V)))    &kp DE_N0    &kp DE_N1            &kp DE_N2           &kp DE_N3        &mt RSHIFT DE_COMMA
+&trans       &kp SPACE                                                                                                   &kp RET          &trans
             >;
         };
 
