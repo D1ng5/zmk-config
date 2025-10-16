@@ -116,8 +116,8 @@
         layer_3 {
             bindings = <
 &ts 0 0  &bl BL_INC  &bl BL_OFF  &bt BT_CLR_ALL  &bt BT_CLR    &rgb_ug RGB_OFF  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI
-&trans   &bl BL_DEC  &bl BL_OFF  &bt BT_PRV      &bt BT_NXT    &rgb_ug RGB_ON   &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD
-&trans   &trans      &trans      &trans          &trans        &trans           &trans           &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
+&to 0    &bl BL_DEC  &bl BL_OFF  &bt BT_PRV      &bt BT_NXT    &rgb_ug RGB_ON   &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD
+&tog 3   &trans      &trans      &trans          &trans        &trans           &trans           &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
 &trans   &trans                                                                                                   &trans           &trans
             >;
         };
