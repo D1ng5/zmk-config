@@ -89,7 +89,7 @@
 &mt NUMBER_1 DE_X      &mt NUMBER_2 DE_V           &mt NUMBER_3 DE_L  &mt NUMBER_4 DE_C  &mt NUMBER_5 DE_W    &mt NUMBER_6 DE_K  &mt N7 DE_H    &mt NUMBER_8 DE_G   &mt NUMBER_9 DE_F  &mt NUMBER_0 DE_Q
 &kp DE_U               &hm LCTRL DE_I              &hm LALT DE_A      &hm LGUI DE_E      &kp DE_O             &kp DE_S           &hm RGUI DE_N  &hm LALT DE_R       &hm RCTRL DE_T     &kp DE_D
 &mt LSHFT DE_U_UMLAUT  &kp DE_O_UMLAUT             &kp DE_A_UMLAUT    &kp DE_P           &kp DE_Z             &kp DE_B           &kp DE_M       &mt DE_COMMA DE_SZ  &mt DOT DE_Y       &mt RSHFT DE_J
-&mo 1                  &mt LS(LA(LEFT_GUI)) SPACE                                                                                                                   &mt RCTRL RET      &mo 2
+&mo 2                  &mt LS(LA(LEFT_GUI)) SPACE                                                                                                                   &mt RCTRL RET      &mo 1
             >;
         };
 
@@ -106,10 +106,10 @@
 
         right_layer {
             bindings = <
-&kp PG_UP    &kp BSPC   &kp UP     &kp DEL    &kp PG_DN            &kp RA(E)    &kp DE_N7            &kp DE_N8           &kp DE_N9        &mt LS(DE_PLUS) KP_SLASH
-&kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT  &kp END              &only_caret  &hm RIGHT_GUI DE_N4  &hm RG(LALT) DE_N5  &hm RCTRL DE_N6  &mt DE_MINUS DE_DOT
-&mt LSHFT A  &ts 3 3    &kp RG(X)  &kp LG(C)  &kp LG(LS(LA(V)))    &kp DE_N0    &kp DE_N1            &kp DE_N2           &kp DE_N3        &mt RSHIFT DE_COMMA
-&trans       &kp SPACE                                                                                                   &kp RET          &trans
+&kp PG_UP    &kp BSPC         &kp UP     &kp DEL    &kp PG_DN            &kp RA(E)    &kp DE_N7            &kp DE_N8           &kp DE_N9        &mt LS(DE_PLUS) KP_SLASH
+&kp HOME     &kp LEFT         &kp DOWN   &kp RIGHT  &kp END              &only_caret  &hm RIGHT_GUI DE_N4  &hm RG(LALT) DE_N5  &hm RCTRL DE_N6  &mt DE_MINUS DE_DOT
+&mt LSHFT A  &ts 3 3          &kp RG(X)  &kp LG(C)  &kp LG(LS(LA(V)))    &kp DE_N0    &kp DE_N1            &kp DE_N2           &kp DE_N3        &mt RSHIFT DE_COMMA
+&trans       &mt LCTRL SPACE                                                                                                   &kp RET          &trans
             >;
         };
 
